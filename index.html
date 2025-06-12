@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HealthMap India</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+    header { background-color: #007acc; color: white; padding: 1rem; text-align: center; }
+    nav { display: flex; justify-content: center; flex-wrap: wrap; background-color: #eee; padding: 0.5rem; }
+    nav a { margin: 0.5rem; text-decoration: none; color: #007acc; font-weight: bold; }
+    .container { padding: 2rem; }
+    .state { background-color: white; padding: 1rem; margin-bottom: 1rem; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    .district { margin-left: 1rem; padding: 0.5rem 0; }
+    .hospital-link { display: inline-block; margin-left: 1rem; background-color: #28a745; color: white; padding: 0.3rem 0.6rem; border-radius: 5px; text-decoration: none; font-size: 0.9rem; }
+    footer { text-align: center; padding: 1rem; background-color: #007acc; color: white; position: fixed; width: 100%; bottom: 0; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>HealthMap India</h1>
+    <p>Explore hospitals across India by state and district</p>
+  </header>
+
+  <nav>
+    <a href="#andhra">Andhra Pradesh</a>
+    <a href="#arunachal">Arunachal Pradesh</a>
+    <a href="#assam">Assam</a>
+    <a href="#bihar">Bihar</a>
+    <a href="#chhattisgarh">Chhattisgarh</a>
+    <a href="#goa">Goa</a>
+    <a href="#gujarat">Gujarat</a>
+    <a href="#haryana">Haryana</a>
+    <a href="#himachal">Himachal Pradesh</a>
+    <a href="#more">More States & UTs...</a>
+  </nav>
+
+  <div class="container">
+    <div class="state" id="andhra">
+      <h2>Andhra Pradesh</h2>
+      <div class="district">Alluri Sitharama Raju <a href="hospital-details.html?state=andhra&district=alluri" class="hospital-link">Hospital Details</a></div>
+      <div class="district">Anakapalli <a href="hospital-details.html?state=andhra&district=anakapalli" class="hospital-link">Hospital Details</a></div>
+      <div class="district">Anantapur <a href="hospital-details.html?state=andhra&district=anantapur" class="hospital-link">Hospital Details</a></div>
+      <div class="district">Bapatla <a href="hospital-details.html?state=andhra&district=bapatla" class="hospital-link">Hospital Details</a></div>
+      <div class="district">Chittoor <a href="hospital-details.html?state=andhra&district=chittoor" class="hospital-link">Hospital Details</a></div>
+      <!-- Add all other districts similarly -->
+    </div>
+
+    <!-- More states will follow the same format -->
+    <!-- Each district has a link to 'hospital-details.html?state=...&district=...' -->
+  </div>
+
+  <footer>
+    &copy; 2025 HealthMap India. All Rights Reserved.
+  </footer>
+</body>
+</html>
